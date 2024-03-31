@@ -1,0 +1,15 @@
+install python venv
+
+install pip
+
+python3 -m pip install -user virtualenv
+
+mkdir {pythonproject}
+ls
+cd pythonprojects
+
+python3 -m venv{testenv}
+ls {testenv}/bin/activate
+source {testenv}/bin/activate
+(testenv) python3 -m pip install requests
+deactivate
